@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include <list>
+#include <deque>
 #include "dog.hpp"
 
 using namespace std;
@@ -9,7 +9,7 @@ using namespace std;
 class Store
 {
 private:
-  list<Dog> grooming_list;
+  deque<Dog> grooming_list;
   string name;
 
 public:

@@ -33,11 +33,10 @@ void Store::wash_dog()
 
 void Store::get_grooming_list()
 {
-  list<Dog>::iterator i;
   cout << "Here is the list of smelly pups who need a bath!" << endl;
-  for (i = grooming_list.begin(); i != grooming_list.end(); ++i)
+  for (int i = 0; i < grooming_list.size(); i++)
   {
-    cout << i->get_name() << endl;
+    cout << grooming_list[i].get_name() << endl;
   }
   cout << endl;
 }
