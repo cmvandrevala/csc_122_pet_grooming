@@ -12,7 +12,7 @@ std::string Dog::get_name()
   return name;
 };
 
-void Dog::speak()
+std::string Dog::speak()
 {
-  std::cout << this->name << " says woof woof! That means thank you!" << std::endl;
+  return this->name + " says woof woof! That means thank you!\n";
 };

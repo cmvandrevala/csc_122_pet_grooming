@@ -5,7 +5,12 @@
 
 #include "../src/dog.hpp"
 
-TEST_CASE( "it returns Hello World" ) {
+TEST_CASE( "#get_name" ) {
   Dog fido = Dog("Fido");
   REQUIRE( fido.get_name() == "Fido" );
+}
+
+TEST_CASE( "#speak" ) {
+  Dog fido = Dog("Bruno");
+  REQUIRE( fido.speak() == "Bruno says woof woof! That means thank you!\n" );
 }

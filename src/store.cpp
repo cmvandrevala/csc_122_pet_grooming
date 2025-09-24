@@ -25,7 +25,7 @@ void Store::wash_dog()
   Dog dog = grooming_list.front();
   std::cout << "Washing the dog named " << dog.get_name() << std::endl;
   std::cout << "How are you doing, bud?" << std::endl;
-  dog.speak();
+  std::cout << dog.speak();
   std::cout << "Great! You are all done" << std::endl;
   std::cout << std::endl;
   grooming_list.pop_front();

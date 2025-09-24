@@ -10,5 +10,5 @@ private:
 public:
   std::string get_name();
   explicit Dog(std::string name);
-  void speak();
+  std::string speak();
 };
